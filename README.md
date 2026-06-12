@@ -16,15 +16,11 @@
 
 ## Qué hace
 
-- Consultas en lenguaje natural sobre datos (requiere login)
+- Consultas en lenguaje natural sobre datos
 - Pruebas de hola mundo, prompt, chat y embeddings
 - Catálogo de herramientas y modelos
 - Tema claro/oscuro
 
-## Vista local
-
-```bash
-npx serve .
-```
+Icono: `mdi:cloud-sync-outline` · tema `#1565c0`
 
 MIT · Jeff-Aporta
