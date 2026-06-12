@@ -10,13 +10,12 @@
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![MUI](https://img.shields.io/badge/MUI-9-007FFF?logo=mui&logoColor=white)](https://mui.com/)
 [![Cloudflare Workers AI](https://img.shields.io/badge/API-Workers%20AI-F38020?logo=cloudflare&logoColor=white)](https://github.com/Jeff-Aporta/cf-ai-back)
-[![Orquestador](https://img.shields.io/badge/Gateway-main--orchestrator-5c6bc0?logo=cloudflare&logoColor=white)](https://main-orchestrator.jeffaporta.workers.dev/api/ui)
 
 ## Demo
 
 **https://jeff-aporta.github.io/cf-ai-front/**
 
-API vía orquestador: `https://main-orchestrator.jeffaporta.workers.dev/api/cf-ai/*`
+Las llamadas API usan el gateway configurado en `front-shared` (TargetSwitch local / producción). No hardcodear URLs de workers en el front.
 
 ## Uso local
 
@@ -24,13 +23,14 @@ Sirve la carpeta con Live Server (p. ej. `:5500`) e inicia sesión con las misma
 
 ## Pestañas
 
-| Pestaña | Endpoint |
-|---------|----------|
-| Hola mundo | `GET/POST /api/cf-ai/hello` |
-| Prompt | `POST /api/cf-ai/tools/prompt/complete` |
-| Chat | `POST /api/cf-ai/tools/text/responses` |
-| Embeddings | `POST /api/cf-ai/tools/text/embeddings` |
-| Catálogo | `GET /api/cf-ai/tools`, `/catalog` |
+| Pestaña | Descripción |
+|---------|-------------|
+| Consultas BD | Chat en lenguaje natural (solo SELECT, requiere login) |
+| Hola mundo | Prueba pública GET y POST con sesión |
+| Prompt | Completado de prompt |
+| Chat | Respuestas de texto |
+| Embeddings | Vectores de texto |
+| Catálogo | Herramientas y modelos disponibles |
 
 ## Repo relacionado
 

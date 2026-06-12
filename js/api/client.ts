@@ -34,5 +34,6 @@
     promptComplete: (body) => api("/api/cf-ai/tools/prompt/complete", { method: "POST", body: JSON.stringify(body) }),
     textResponses: (body) => api("/api/cf-ai/tools/text/responses", { method: "POST", body: JSON.stringify(body) }),
     textEmbeddings: (body) => api("/api/cf-ai/tools/text/embeddings", { method: "POST", body: JSON.stringify(body) }),
+    dbAsk: (body) => api("/api/cf-ai/tools/db/ask", { method: "POST", body: JSON.stringify(body) }),
   };
 })();

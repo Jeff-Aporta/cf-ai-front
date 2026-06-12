@@ -1,8 +1,9 @@
 (function () {
   "use strict";
 
+  const FRONT_SHARED_REF = "05509e7";
   const BOOT_HELPER =
-    "https://cdn.jsdelivr.net/gh/Jeff-Aporta/front-shared@main/cdn/boot-helper.mjs";
+    "https://cdn.jsdelivr.net/gh/Jeff-Aporta/front-shared@" + FRONT_SHARED_REF + "/cdn/boot-helper.mjs?v=" + FRONT_SHARED_REF;
 
   const FILES = ["js/core/isa-setup.ts", "js/api/client.ts", "js/app/App.jsx"];
 
