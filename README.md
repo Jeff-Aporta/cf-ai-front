@@ -22,5 +22,3 @@
 - Tema claro/oscuro
 
 Icono: `mdi:cloud-sync-outline` · tema `#1565c0`
-
-MIT · Jeff-Aporta
