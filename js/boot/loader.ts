@@ -1,9 +1,11 @@
 (function () {
   "use strict";
 
-  const FRONT_SHARED_REF = "7921b9c";
-  const BOOT_HELPER =
-    "https://cdn.jsdelivr.net/gh/Jeff-Aporta/front-shared@" + FRONT_SHARED_REF + "/cdn/boot-helper.mjs?v=" + FRONT_SHARED_REF;
+  const FRONT_SHARED_REF = "9b5af5c";
+  const isLocalDev = /localhost|127\.0\.0\.1|\[::1\]/.test(location.hostname);
+  const BOOT_HELPER = isLocalDev
+    ? "../../front-shared/cdn/boot-helper.mjs"
+    : "https://cdn.jsdelivr.net/gh/Jeff-Aporta/front-shared@" + FRONT_SHARED_REF + "/cdn/boot-helper.mjs?v=" + FRONT_SHARED_REF;
 
   const FILES = ["js/core/isa-setup.ts", "js/api/client.ts", "js/app/App.jsx"];
 
