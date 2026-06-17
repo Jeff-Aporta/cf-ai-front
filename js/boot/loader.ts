@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const FRONT_SHARED_REF = "9f0ec53";
+  const FRONT_SHARED_REF = "7921b9c";
   const BOOT_HELPER =
     "https://cdn.jsdelivr.net/gh/Jeff-Aporta/front-shared@" + FRONT_SHARED_REF + "/cdn/boot-helper.mjs?v=" + FRONT_SHARED_REF;
 
