@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "CF-AI — Jeff-Aporta",
+    "applicationName": "CF-AI",
+    "description": "Pruebas de Workers AI: hola mundo, prompt, texto, audio e imagen.",
+    "keywords": "Cloudflare Workers AI, cf-ai, LLM, Whisper, Jeff-Aporta",
+    "themeColor": "#1565c0",
+    "themeLsKey": "cf-ai:theme",
+    "icon": "mdi:cloud-sync-outline",
+    "canonical": "https://jeff-aporta.github.io/cf-ai-front/",
+    "ogSiteName": "Jeff-Aporta — CF-AI",
+    "ogTitle": "CF-AI — Jeff-Aporta",
+    "imageAlt": "CF-AI — Workers AI"
+  },
+  "styles": [
+    "fonts-google",
+    "shared-base",
+    "shared-feedback"
+  ],
+  "libs": []
+}
