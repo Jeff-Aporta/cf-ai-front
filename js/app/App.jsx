@@ -139,20 +139,17 @@
     }
 
     const tabs = [
-      { id: "db", label: "Consultas BD" },
-      { id: "hello", label: "Hola mundo" },
-      { id: "prompt", label: "Prompt" },
-      { id: "chat", label: "Chat LLM" },
-      { id: "embed", label: "Embeddings" },
-      { id: "catalog", label: "Catálogo" },
+      { id: "db", label: "Consultas BD", icon: "mdi:database-search-outline" },
+      { id: "hello", label: "Hola mundo", icon: "mdi:hand-wave-outline" },
+      { id: "prompt", label: "Prompt", icon: "mdi:text-box-outline" },
+      { id: "chat", label: "Chat LLM", icon: "mdi:chat-outline" },
+      { id: "embed", label: "Embeddings", icon: "mdi:vector-combine" },
+      { id: "catalog", label: "Catálogo", icon: "mdi:view-list-outline" },
     ];
 
     const panel = (
       <MUI.Container maxWidth="md" sx={{ py: 2 }}>
         {err ? <MUI.Alert severity="error" sx={{ mb: 2 }} onClose={() => setErr("")}>{err}</MUI.Alert> : null}
-        <MUI.Tabs value={tab} onChange={(_e, v) => setTab(v)} variant="scrollable" sx={{ mb: 2 }}>
-          {tabs.map((t) => <MUI.Tab key={t.id} value={t.id} label={t.label} />)}
-        </MUI.Tabs>
 
         {tab === "db" ? (
           <DbChatPanel
@@ -227,7 +224,11 @@
     );
 
     return (
-      <Shell ns="CFAI" loginGate>
+      <Shell
+        ns="CFAI"
+        loginGate
+        navRows={[{ id: "tool", tier: "primary", value: tab, onChange: setTab, tabs }]}
+      >
         {panel}
       </Shell>
     );
@@ -241,4 +242,4 @@
   };
   window.CFAI.mount();
 })();
-
+

@@ -1,3 +1,7 @@
+<!--
+  Generado por gen-front-readme.mjs — editar frontend/index.json (bloque readme).
+-->
+
 <p align="center">
   <img src="https://api.iconify.design/mdi/cloud-sync-outline.svg?color=%231565c0&width=96&height=96" width="96" height="96" alt="CF-AI" />
 </p>
@@ -19,6 +23,4 @@
 - Consultas en lenguaje natural sobre datos
 - Pruebas de hola mundo, prompt, chat y embeddings
 - Catálogo de herramientas y modelos
-- Tema claro/oscuro
-
-Icono: `mdi:cloud-sync-outline` · tema `#1565c0`
+- **Tema** claro/oscuro

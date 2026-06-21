@@ -17,5 +17,15 @@
     "shared-base",
     "shared-feedback"
   ],
-  "libs": []
+  "libs": [],
+  "readme": {
+    "tagline": "panel de pruebas de IA (texto, audio, imagen y prompt).",
+    "badges": ["github-pages", "react", "mui"],
+    "features": [
+      "Consultas en lenguaje natural sobre datos",
+      "Pruebas de hola mundo, prompt, chat y embeddings",
+      "Catálogo de herramientas y modelos",
+      "**Tema** claro/oscuro"
+    ]
+  }
 }
